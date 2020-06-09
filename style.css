@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.alive {
+    background-color: #444;
+}
+
+.dead {
+    background-color: #ddd;
+}
+
+.button__start,
+.button__randomize,
+.input__ratio,
+.input__timeout,
+.button__timeout,
+.input__w,
+.input__h,
+.button__size,
+.button__clear {
+    /*font-size: 1em;*/
+    margin: 0.5em 0;
+    padding: 0.2em;
+}
+
+.input__ratio,
+.input__timeout,
+.input__w,
+.input__h {
+    width: 4em;
+}
+
+.button__start {
+    font-size: 1.5em;
+    padding: 0.4em;
+    width: 10em;
+}

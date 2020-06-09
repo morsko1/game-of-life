@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <label for="ratio" class="input__ratio">live ratio:</label>
+    <input id="ratio" class="input__ratio" type="number" step="0.1" value="0.3" width="10" height="10">
+    <button onclick="game.randomize()" id="button__randomize" class="button__randomize">randomize</button>
+    <button onclick="game.clearField()" id="button__clear" class="button__clear">clear field</button>
+    <br>
+    <label for="timeout" class="input__timeout">timeout, ms:</label>
+    <input id="timeout" class="input__timeout" type="number" step="50" value="200" width="10" height="10">
+    <button onclick="game.setTimeout()" id="button__timeout" class="button__timeout">set step time</button>
+    <br>
+    <label for="w" class="input__w">width:</label>
+    <input id="w" class="input__w" type="number" step="10" value="20" width="10" height="10">
+    <label for="h" class="input__h">height:</label>
+    <input id="h" class="input__w" type="number" step="10" value="20" width="10" height="10">
+    
+    <button onclick="game.setFieldSize()" id="button__size" class="button__size">set field size</button>
+    <br>
+    <button onclick="game.start()" class="button__start">start</button>
+    <div id="container"></div>
+    <div>steps: <span id="steps">0</span></div>
+    <script src="main.js"></script>
+</body>
+</html>
